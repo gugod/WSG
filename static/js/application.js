@@ -1,6 +1,4 @@
 $.fn.moreText = function(n) {
-    console.log(this);
-
     this.each(function() {
         var m = n;
         var self = $(this);
@@ -8,7 +6,6 @@ $.fn.moreText = function(n) {
         if (!m) {
             var matched = self.attr("class").match(/lipsum\((\d+)\)/);
             if (matched) {
-                console.log(self.attr("class"), matched, matched[1]);
                 m = matched[1]
             }
             else {
