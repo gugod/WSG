@@ -7,6 +7,7 @@
     <link rel="stylesheet" type="text/css" href="/static/css/grid.css" media="screen">
     <link rel="stylesheet" type="text/css" href="/static/css/styles.css" media="screen">
     <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.0/jquery.min.js"></script>
+    <script type="text/javascript" src="/static/js/moretext.js"></script>
     <script type="text/javascript" src="/static/js/application.js"></script>
 </head>
 <body>

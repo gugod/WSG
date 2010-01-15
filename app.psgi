@@ -22,11 +22,15 @@ use Acme::Lingua::ZH::Remix;
 sub get {
     my $self = shift;
     my $n = $self->request->param("n") || 1;
+    my $cb = $self->request->param("callback");
+
     my @sentences;
 
     push(@sentences, rand_sentence) while($n-->0);
 
-    $self->finish( to_json({ sentences => \@sentences }) )
+    my $json_text = to_json({ sentences => \@sentences });
+
+    $self->finish($cb ? "${cb}(${json_text})" : $json_text );
 }
 
 package main;
