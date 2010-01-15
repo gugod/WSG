@@ -2,7 +2,7 @@
 <html>
 <head>
     <meta charset="utf-8">
-    <title>Hello There</title>
+    <title class="lipsum"></title>
     <link rel="shortcut icon" href="/static/img/favicon.ico">
     <link rel="stylesheet" type="text/css" href="/static/css/grid.css" media="screen">
     <link rel="stylesheet" type="text/css" href="/static/css/styles.css" media="screen">
