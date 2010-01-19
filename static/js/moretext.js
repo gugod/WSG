@@ -19,7 +19,7 @@ $.fn.moreText = function(n) {
 
     var self = this;
 
-    $.getJSON("/sentences.js?callback=?", { 'n': n }, function(data) {
+    $.getJSON("http://wsg.gugod.org/sentences.js?callback=?", { 'n': n }, function(data) {
         var sentences = data.sentences;
 
         self.each(function() {
